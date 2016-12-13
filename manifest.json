@@ -1,0 +1,13 @@
+{
+  "bundle": "se.infomaker.RssReader",
+  "name": "Rss Reader",
+  "graphic_url": "https://s3-eu-west-1.amazonaws.com/dashboard-plugins/se-infomaker-rssreader/rss.png",
+  "description": "Rss Reader to read any rss feed",
+  "author": {
+  	"name": "Hamzah Alhariri",
+    "organization": "Infomaker AB",
+  	"email": "hamzah.alhariri@infomaker.se",
+  	"website": "www.infomaker.se"
+  },
+  "version": "1.2.1"
+}
