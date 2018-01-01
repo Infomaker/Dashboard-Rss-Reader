@@ -143,7 +143,7 @@ function updateManifestFile() {
     return new Promise(resolve => {
         fs.writeFile(
             "./manifest.json",
-            JSON.stringify(manifest, null, 4),
+            JSON.stringify(manifest, null, 8),
             "utf8",
             err => {
                 if (!err) {
@@ -199,7 +199,7 @@ function uploadThumbnail() {
 
 function uploadIndexJS() {
     return new Promise((resolve, reject) => {
-        zlib.gzip(fs.readFileSync("dist/index.js"), (error, result) => {
+        zlib.gzip(fs.readFileSync("dist/dist.js"), (error, result) => {
             if (error) throw error;
 
             upload({
