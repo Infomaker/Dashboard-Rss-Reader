@@ -71,8 +71,6 @@ export default class RssReader extends Application {
 			}
 		})
 
-		console.log(language && language.indexOf('ar') >= 0 ? 'rtl' : 'ltr')
-
 		return (
 			<AppWrapper>
 				<Header hasUrl={link ? true : false} onClick={() => link ? window.open(link) : null}>
