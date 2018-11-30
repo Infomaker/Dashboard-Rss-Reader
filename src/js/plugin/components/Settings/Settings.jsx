@@ -66,6 +66,7 @@ export default class RssSettings extends Settings {
 						},
 						description: {
 							key: 'description',
+							inLine: false,
 							match: [],
 							replace: [],
 						},

@@ -34,9 +34,22 @@ const Description = styled(GUI.Paragraph)`
 	color: #8a8a8a;
 `
 
+const List = styled(GUI.List)`
+	${props => !props.inLine && `
+		.se-infomaker-gui-list-item {
+			&__list-item {
+				&-content__content {
+					white-space: pre-line;
+				}
+			}
+		}
+	`}
+`
+
 export {
 	AppWrapper,
 	Header,
 	Title,
 	Description,
+	List,
 }

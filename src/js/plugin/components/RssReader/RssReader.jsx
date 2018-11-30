@@ -1,6 +1,6 @@
-import { Application, GUI, ViewUtil, createUUID } from 'Dashboard'
+import { Application, ViewUtil, createUUID } from 'Dashboard'
 
-import { AppWrapper, Header, Title, Description } from './style'
+import { AppWrapper, Header, Title, Description, List } from './style'
 
 const Scrollable = ViewUtil.Scrollable
 
@@ -59,7 +59,7 @@ export default class RssReader extends Application {
 	}
 
 	render() {
-		let { language, link, header, items = [], description } = this.state
+		let { itemExtractors, language, link, header, items = [], description } = this.state
 
 		const results = items.map(item => {
 			return {
@@ -71,6 +71,8 @@ export default class RssReader extends Application {
 			}
 		})
 
+		const inLineDescription = itemExtractors && itemExtractors.description && itemExtractors.description.inLine
+
 		return (
 			<AppWrapper>
 				<Header hasUrl={link ? true : false} onClick={() => link ? window.open(link) : null}>
@@ -79,7 +81,11 @@ export default class RssReader extends Application {
 				</Header>
 
 				<Scrollable autoHide={true}>
-					<GUI.List items={results} direction={language && language.indexOf('ar') >= 0 ? 'rtl' : 'ltr'}/>
+					<List
+						items={results}
+						inLine={inLineDescription}
+						direction={language && language.indexOf('ar') >= 0 ? 'rtl' : 'ltr'}
+					/>
 				</Scrollable>
 			</AppWrapper>
 		)
