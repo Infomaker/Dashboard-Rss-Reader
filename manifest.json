@@ -1,13 +1,16 @@
 {
-  "bundle": "se.infomaker.RssReader",
-  "name": "Rss Reader",
-  "graphic_url": "https://s3-eu-west-1.amazonaws.com/dashboard-plugins/se-infomaker-rssreader/rss.png",
-  "description": "Rss Reader to read any rss feed",
-  "author": {
-  	"name": "Hamzah Alhariri",
-    "organization": "Infomaker AB",
-  	"email": "hamzah.alhariri@infomaker.se",
-  	"website": "www.infomaker.se"
-  },
-  "version": "1.2.1"
+        "bundle": "se.infomaker.RssReader",
+        "name": "Rss Reader",
+        "description": "Rss Reader to read any rss feed",
+        "author": {
+                "name": "Hamzah Al Hariri",
+                "organization": "Infomaker AB",
+                "email": "hamzah.alhariri@infomaker.se",
+                "website": "www.infomaker.se"
+        },
+        "version": "1.3.1",
+        "wiki_url": "https://github.com/Infomaker/Dashboard-Plugin/wiki/RSS-Reader",
+        "graphic_url": "https://plugins-prod.s3.eu-west-1.amazonaws.com/se-infomaker-rssreader/1-3-0/icon.png",
+        "markdown_url": "https://plugins-prod.s3.eu-west-1.amazonaws.com/se-infomaker-rssreader/1-3-0/markdown.md",
+        "buildVersion": 1543574441878
 }
